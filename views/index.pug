@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Welcome to my Color Changer
+  form(method="POST" action="/")
+    input(type="color" name="colorPicker" id="picker" value=`${color}`)
+    label(for="picker") Click Me!
+    input(type="color" name="textColorPicker" id="textPicker" value=`${textColor}`)
+    label(for="textPicker") Click Me!!
+            button(type="submit") Submit
+  p Welcome to #{title}
